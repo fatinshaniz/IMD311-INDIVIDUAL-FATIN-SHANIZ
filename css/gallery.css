@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav{
+    height: 80px;
+    background: #C4C236;
+    overflow: hidden;
+}
+
+nav img{
+    width: 150px;
+    position: absolute;
+    top: 1px;
+    left: 5%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color:darkgreen;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color:rgb(70, 16, 16);
+}
+
+h1{
+    font-size: 80px;
+    color:indianred;
+    text-align: center;
+}
+input{
+    display: none;
+}
+
+.tag{
+    font-size: 1.4rem;
+    margin: 1.5rem 0rem;
+    padding: 5px 1.8rem;
+    border-radius: 50px;
+    background-color: #efefef;
+    display: inline-block;
+    color: black;
+    cursor:pointer;
+    border: 1px solid #ccc;
+
+}
+
+div img{
+    transition: all .4s ease-in-out;
+    border-radius: 10%;
+}
+
+div video{
+    width: 320px;
+    height: 240px;
+    transition: all .4s ease-in-out;
+    border-radius: 10%;
+}
+
+/*filter css */
+#myself:checked ~ .images> img:not([class *="myself"]),
+#family:checked ~ .images> img:not([class *="family"]),
+#friends:checked ~ .images> img:not([class *="friends"]),
+#videos:checked ~ .images> img:not([class *="videos"])
+{
+    width: 0px;
+    height: 0px;
+}
+
+#all:checked ~ .all,
+#myself:checked ~ .myself,
+#family:checked ~ .family,
+#friends:checked ~ .friends,
+#videos:checked ~ .videos{
+    background-color: #a15d5d;
+    color: rgb(247, 247, 247);
+}
+

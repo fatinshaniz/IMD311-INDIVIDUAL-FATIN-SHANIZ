@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    height: 80px;
+    background: #C4C236;
+    overflow: hidden;
+}
+
+nav img{
+    width: 150px;
+    position: absolute;
+    top: 1px;
+    left: 5%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 25px;
+
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    color:darkgreen;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color:rgb(70, 16, 16);
+}
+
+marquee{
+    color:darkolivegreen;
+    margin-top:20px;
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 30px;
+}
+.detail{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color:olivedrab;
+    margin-bottom: 20px;
+}
+
+.detail h2{
+    font-size: 40px;
+    color:olivedrab;
+    margin-bottom: 20px;
+}
+
+span{
+    color:rgba(63, 92, 31, 0.801);
+    font-family: "Lucida Handwriting", cursive;
+}
+
+.detail p{
+    color:rgb(99, 99, 33);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    top: 15%;
+    right: 100px;
+
+}
+
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 15%;
+    transform: translateX(-50%);
+    transform: bottom 1s, left 1s;
+}
+
+.image:hover .shape{
+    bottom: 40px;
+}
+
+.image:hover .profile{
+    left: 45%;
+}
